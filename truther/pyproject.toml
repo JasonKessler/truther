@@ -1,10 +1,5 @@
-[build-system]
-requires = ["setuptools>=68", "setuptools_scm[toml]>=8"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "truther"
-version = "0.1"
 requires-python = ">= 3.8"
 dynamic = ["version"]
 dependencies = [
@@ -17,6 +12,10 @@ authors = [
 readme = "README.md"
 license = {text = "MIT License"}
 keywords = ["nlp", "veridicity", "semantics"]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
 
 # Enables the usage of setuptools_scm
 [tool.setuptools_scm]
